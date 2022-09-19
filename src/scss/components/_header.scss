@@ -162,3 +162,38 @@
   }
 
 }
+
+@media screen and (min-width: 1000px) {
+  .header {
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    &--nav {
+      img {
+        margin-left: 0;
+      }
+    }
+
+    &--hero {
+      margin-left: 0;
+
+      .header--hero_phrase {
+        @include m.flexRow(flex-start, center, wrap);
+        width: 500px;
+        padding: 25px 30px;
+        
+        span {
+          font-size: 60px;
+        }
+  
+        span:nth-child(2) {
+          width: 399px;
+        }
+        span:nth-child(3) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

@@ -238,6 +238,37 @@ button:hover {
     margin-right: 15px;
   }
 }
+@media screen and (min-width: 1000px) {
+  .header {
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .header--nav img {
+    margin-left: 0;
+  }
+  .header--hero {
+    margin-left: 0;
+  }
+  .header--hero .header--hero_phrase {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 25px 30px;
+  }
+  .header--hero .header--hero_phrase span {
+    font-size: 60px;
+  }
+  .header--hero .header--hero_phrase span:nth-child(2) {
+    width: 399px;
+  }
+  .header--hero .header--hero_phrase span:nth-child(3) {
+    margin-right: 15px;
+  }
+}
 main {
   max-width: 1400px;
   padding: 100px 20px;

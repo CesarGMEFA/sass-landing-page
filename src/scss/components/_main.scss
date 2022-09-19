@@ -1,0 +1,213 @@
+@use '../colors' as color;
+@use '../fonts' as font;
+@use '../mixins' as m;
+
+main {
+  max-width: 1400px;
+  padding: 100px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.aboutUs {
+  padding-bottom: 150px;
+
+  img {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  &--text {
+    margin-left: 22px;
+    margin-right: 22px;
+    background-color: color.$white;
+    
+    h2 {
+      padding-bottom: 25px;
+    }
+  
+    p {
+      color: color.$darkGray;
+      line-height: font.$lineHeightParagraph;
+    }
+  }
+}
+
+.creations {
+  @include m.flexColumn(center, center, nowrap);
+
+  &--info {
+    padding-bottom: 40px;
+    
+    .button--up {
+      display: none
+    }
+  }
+  &--images {
+    @include m.flexColumn(center, center, nowrap);
+    width: 100%;
+    margin-bottom: 30px;
+    
+    &_content {
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      color: color.$white;
+      font-size: font.$textIntoImg;
+      font-family: font.$fontSecundary;
+      font-weight: font.$weightJosefin;
+      text-align: start;
+      box-shadow: inset 150px 2px 50px -15px rgba(0,0,0,0.53);
+  
+      &:hover {
+        opacity: 0.5;
+        box-shadow: none;
+      }
+    }
+  
+    .deepEarth {
+      background-image: url('../../../images/mobile/image-deep-earth.jpg');
+      @include m.bgImageStandard
+    }
+  
+    .nightArcade {
+      background-image: url('../../../images/mobile/image-night-arcade.jpg');
+      @include m.bgImageStandard
+    }
+  
+    .soccerTeam {
+      background-image: url('../../../images/mobile/image-soccer-team.jpg');
+      @include m.bgImageStandard
+    }
+  
+    .theGrid {
+      background-image: url('../../../images/mobile/image-grid.jpg');
+      @include m.bgImageStandard
+    }
+  
+    .fromAbove {
+      background-image: url('../../../images/mobile/image-from-above.jpg');
+      @include m.bgImageStandard
+    }
+  
+    .pocketBorealis {
+      background-image: url('../../../images/mobile/image-pocket-borealis.jpg');
+      @include m.bgImageStandard
+    }
+  
+    .theCuriosity {
+      background-image: url('../../../images/mobile/image-curiosity.jpg');
+      @include m.bgImageStandard
+    }
+  
+    .fisheye {
+      background-image: url('../../../images/mobile/image-fisheye.jpg');
+      @include m.bgImageStandard
+    }
+  }
+}
+
+
+
+// media queryes
+
+@media screen and (min-width: 700px) {
+  .creations {
+
+    .button--down {
+      display: none;
+    }
+
+    &--info {
+      @include m.flexRow(space-between, center, nowrap);
+      max-width: 850px;
+      width: 100%;
+
+      .button--up {
+        display: inline-block
+      }
+    }
+
+    &--images {
+    @include m.flexRow(center, center, wrap);
+    max-width: 1098px;
+  
+      &_content {
+        width: 200px;
+        padding-top: 300px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        margin: 10px;
+      }
+  
+      .deepEarth {
+        background-image: url('../../../images/desktop/image-deep-earth.jpg');
+        @include m.bgImageStandard
+      }
+    
+      .nightArcade {
+        background-image: url('../../../images/desktop/image-night-arcade.jpg');
+        @include m.bgImageStandard
+      }
+    
+      .soccerTeam {
+        background-image: url('../../../images/desktop/image-soccer-team.jpg');
+        @include m.bgImageStandard
+      }
+    
+      .theGrid {
+        background-image: url('../../../images/desktop/image-grid.jpg');
+        @include m.bgImageStandard
+      }
+    
+      .fromAbove {
+        background-image: url('../../../images/desktop/image-from-above.jpg');
+        @include m.bgImageStandard
+      }
+    
+      .pocketBorealis {
+        background-image: url('../../../images/desktop/image-pocket-borealis.jpg');
+        @include m.bgImageStandard
+      }
+    
+      .theCuriosity {
+        background-image: url('../../../images/desktop/image-curiosity.jpg');
+        @include m.bgImageStandard
+      }
+    
+      .fisheye {
+        background-image: url('../../../images/desktop/image-fisheye.jpg');
+        @include m.bgImageStandard
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .aboutUs {
+    @include m.flexRow(flex-start, flex-start, nowrap);
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+
+    img {
+      width: 60%;
+    }
+
+    &--text {
+      width: 500px;
+      padding: 70px 60px;
+      margin-left: 0;
+      margin-right: 0;
+      
+      position: absolute;
+      right: 0;
+      bottom: 10%;
+      p {
+        text-align: start;
+      }
+    }
+  }
+}

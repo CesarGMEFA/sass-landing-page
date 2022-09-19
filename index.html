@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- styles file -->
+  <link rel="stylesheet" href="src/css/styles.css">
+
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="header--nav">
+      <img class="header--nav_logo" src="./images/logo.svg" alt="logo of Loopstudios">
+      <ul class="header--nav-menu">
+        <li title="nothing">
+          <a href="#">ABOUT</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">CAREERS</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">EVENTS</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">PRODUCTS</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">SUPPORT</a>
+          <span class="span--bottom"></span>
+        </li>
+      </ul>
+      <button type="button" class="ham" title="burger button to view options">
+        <span class="row-1"></span>
+        <span class="row-2"></span>
+        <span class="row-3"></span>
+      </button>
+    </nav>
+    <section class="header--hero">
+        <div class="header--hero_phrase">
+          <span>IMMERSIVE</span>
+          <span>EXPERIENCES</span> 
+          <span>THAT</span>
+          <span>DELIVER</span>
+        </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="aboutUs">
+      <img src="images/mobile/interactive.jpg" alt="A man interactive with a virtual reality">
+      <section class="aboutUs--text">
+        <h2>THE LEADER IN INTERACTIVE VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      </section>
+    </section>
+
+    <section class="creations">
+      <section class="creations--info">
+        <h2>OUR CREATIONS</h2>
+        <button type="button" class="button--up" >SEE ALL</button>
+      </section>
+      <section class="creations--images">
+        <article class="creations--images_content deepEarth">DEEP<br /> EARTH</article>
+        <article class="creations--images_content nightArcade">NIGHT<br /> ARCADE</article>
+        <article class="creations--images_content soccerTeam">SOCCER<br /> TEAM VR</article>
+        <article class="creations--images_content theGrid">THE<br /> GRID</article>
+        <article class="creations--images_content fromAbove">FROM UP<br /> ABOVE VR</article>
+        <article class="creations--images_content pocketBorealis">POCKET<br /> BOREALIS</article>
+        <article class="creations--images_content theCuriosity">THE<br /> CURIOSITY</article>
+        <article class="creations--images_content fisheye">MAKE IT<br /> FISHEYE</article>
+      </section>
+      <button type="button" class="button--down" >SEE ALL</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer--info">
+      <img class="footer--info_logo" src="./images/logo.svg" alt="logo of Loopstudios">
+      <ul>
+        <li title="nothing">
+          <a href="#">About</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">Careers</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">Events</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">Products</a>
+          <span class="span--bottom"></span>
+        </li>
+        <li title="nothing">
+          <a href="#">Support</a>
+          <span class="span--bottom"></span>
+        </li>
+      </ul>
+    </section>
+    <section class="footer--network">
+      <section class="footer--network_icons">
+        <a class="icon icon--facebook" href="https://www.facebook.com/CesarGFarreras/" target="_blank" rel="noreferrer">
+          <img src="./images/icon-facebook.svg" alt="facebook icon">
+          <span class="span--bottom"></span>
+        </a>
+        <a class="icon icon--twitter" href="https://twitter.com/CesarGMEFA" target="_blank" rel="noreferrer">
+          <img src="./images/icon-twitter.svg" alt="twitter icon">
+          <span class="span--bottom"></span>
+        </a>
+        <a class="icon icon--pinterest" href="#">
+          <img src="./images/icon-pinterest.svg" alt="Pinterest icon">
+          <span class="span--bottom"></span>
+        </a>
+        <a class="icon icon--instagram" href="https://www.instagram.com/cesar.farr/" target="_blank" rel="noreferrer">
+          <img src="./images/icon-instagram.svg" alt="instagram icon">
+          <span class="span--bottom"></span>
+        </a>
+      </section>
+      <section class="footer--network_rights">
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </section>
+    </section>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/profile/CesarGMEFA" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/CesarGMEFA/" target="_blank">C&eacute;sar Gabriel Mejias Farreras</a>.
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+</html>

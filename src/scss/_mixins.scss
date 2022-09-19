@@ -1,0 +1,21 @@
+@mixin bgImageStandard {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin flexRow($justify, $items, $wraping) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-items: $items;
+  flex-wrap: $wraping;
+}
+
+@mixin flexColumn($justify, $items, $wraping) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $items;
+  flex-wrap: $wraping;
+}

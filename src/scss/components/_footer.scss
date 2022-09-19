@@ -1,0 +1,79 @@
+@use '../colors' as color;
+@use '../fonts' as font;
+@use '../mixins' as m;
+
+.footer {
+  @include m.flexColumn(center, center, nowrap);
+  color: color.$white;
+  background-color: color.$black;
+  padding: 40px 20px;
+}
+
+.footer--info {
+  img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    @include m.flexColumn(center, center, nowrap);
+    margin-bottom: 30px;
+
+    li {
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer--network {
+  @include m.flexColumn(center, center, nowrap);
+
+  &_icons {
+    @include m.flexRow(space-evenly, center, nowrap);
+    margin-bottom: 10px;
+    .icon {
+      width: 25px;
+      height: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &_rights {
+    color: color.$veryDarkGray;
+  }
+}
+
+.icon--twitter {
+  img {
+    height: 24px;
+  }
+}
+
+.attribution { 
+  padding: 8px 0;
+  font-size: 12px;
+  text-align: center; 
+  color: color.$white;
+  background-color: color.$black;
+  a { 
+    color: hsl(228, 45%, 44%); 
+  }
+}
+
+
+// media queries
+@media  screen and (min-width: 700px) {
+  .footer {
+    @include m.flexRow(space-between, center, nowrap);
+
+    &--info {
+      ul {
+      @include m.flexRow(space-between, center, nowrap);
+      width: 300px;
+      }
+    }
+  }
+}

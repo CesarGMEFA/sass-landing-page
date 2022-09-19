@@ -1,0 +1,72 @@
+@use 'colors' as color;
+@use 'fonts' as font;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: font.$fontPrimmary;
+  font-weight: font.$weightAlata;
+}
+
+body {
+  font-size: font.$sizeBody;
+}
+
+h2 {
+  color: color.$black;
+  font-family: font.$fontSecundary;
+  font-size: font.$titlesTwo;
+  font-weight: font.$weightJosefin;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  height: 40px;
+}
+
+.span--bottom {
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25px;
+  height: 2px;
+  background-color: color.$white;
+  display: none;
+  
+}
+a:hover ~ .span--bottom,
+.icon img:hover ~ .span--bottom  {
+  display: block;
+}
+
+a {
+  color: color.$white;
+  text-decoration: none;
+}
+
+button {
+  padding: 8px 30px;
+  font-family: font.$fontPrimmary;
+  font-weight: font.$weightAlata;
+  letter-spacing: 2px;
+  background-color: color.$white;
+  border: 1px solid color.$black;
+  cursor: pointer;
+
+  &:hover {
+    color: color.$white;
+    background-color: color.$black
+  }
+}
+
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';
